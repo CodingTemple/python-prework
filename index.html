@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>If-elif-and-else-Statements</title>
+<title>whatweneed</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11751,19 +11751,43 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="if,elif,else-Statements">if,elif,else Statements<a class="anchor-link" href="#if,elif,else-Statements">&#182;</a></h1><p>if Statements in Python allows us to tell the computer to perform alternative actions based on a certain set of results.</p>
-<p>Verbally, we can imagine we are telling the computer:</p>
-<p>"Hey if this case happens, perform some action"</p>
-<p>We can then expand the idea further with elif and else statements, which allow us to tell the computer:</p>
-<p>"Hey if this case happens, perform some action. Else if another case happens, perform some other action. Else-- none of the above cases happened, perform this action"</p>
-<p>Let's go ahead and look at the syntax format for if statements to get a better idea of this:</p>
-
-<pre><code>if case1:
-    perform action1
-elif case2:
-    perform action2
-else:
-    perform action 3</code></pre>
+<h1 id="Installing-what-we-need-for-class">Installing what we need for class<a class="anchor-link" href="#Installing-what-we-need-for-class">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Installing-Python">Installing Python<a class="anchor-link" href="#Installing-Python">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h6 id="The-version-of-python-we-will-be-using-in-class-will-be-Python-3.5.-We-will-also-use-Atom-as-our-text-editor-and-here,-you-will-get-the-needed-instructions-to-install-everything-needed-for-class.">The version of python we will be using in class will be Python 3.5. We will also use Atom as our text editor and here, you will get the needed instructions to install everything needed for class.<a class="anchor-link" href="#The-version-of-python-we-will-be-using-in-class-will-be-Python-3.5.-We-will-also-use-Atom-as-our-text-editor-and-here,-you-will-get-the-needed-instructions-to-install-everything-needed-for-class.">&#182;</a></h6><p>To start please go to the <a href="https://www.python.org/">python community website</a> and download python for your computer.</p>
+<p><strong>For ALL users</strong>:</p>
+<ul>
+<li><strong>1.</strong> Click the <img src="http://res.cloudinary.com/carter3689/image/upload/c_scale,h_19,w_131/v1497286934/menu-button_jveuyd.png" alt="Menu-button"> displayed on the front page of the website. This should bring up a side menu. Please click the downloads selection.</li>
+<li><strong>2.</strong> From there, scroll down to the "Looking for a Specific Release?" section and click the download link for Python 3.6</li>
+<li><p><strong>3.</strong> Scrolling down on the subsequent page will display the downloadable file(s) section and you will want to download the "Your-Operating-System x86-64 executable installer" <img src="https://res.cloudinary.com/carter3689/image/upload/v1497286934/python-version_qjk9ld.png" alt="python-version">. Download and run the .exe/.pkg file when it is ready.</p>
+<p><strong>For Windows users</strong>:</p>
+</li>
+<li>When the file starts be careful to click the checkbox at the bottom of the popup window to add python to the local PATH of your computer. <a href="https://youtu.be/dX2-V2BocqQ?t=1m28s">Here is a helpful link demonstrating this point</a></li>
+</ul>
+<p><strong> For Mac Users </strong>:</p>
+<ul>
+<li>Follow the steps 1-3 for ALL users </li>
+<li><a href="https://youtu.be/99o_WDjjuv8?t=3m2s">Use this video for a helpful reference if needed</a>. Once you have everything installed, you can verify this by going to your terminal and typing "<code>python</code>" and hitting enter. What should then appear should show you the version of python and allow you to type "<code>print('Hello World')</code> and the result should be <code>&gt;&gt;&gt;Hello World</code></li>
+</ul>
+<p><strong> For Linux (Ubuntu) Users</strong>:</p>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-16-04">Please refer to this blog post published by digital ocean regarding linux Ubuntu and python.</a></li>
+</ul>
 
 </div>
 </div>
@@ -11773,214 +11797,46 @@ else:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="First-Example">First Example<a class="anchor-link" href="#First-Example">&#182;</a></h2><p>Let's see a quick example of this:</p>
-
+<h2 id="Installing-Anaconda-and-Jupyter-Notebooks">Installing Anaconda and Jupyter Notebooks<a class="anchor-link" href="#Installing-Anaconda-and-Jupyter-Notebooks">&#182;</a></h2>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="nb">print</span> <span class="s1">(It was true!)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>It was true!
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's add in some else logic:</p>
+<p>For python instruction and for the data science portion of class we will use Jupyter Notebooks. We will also use Anaconda as our environment creation system once we start creating full projects using django.</p>
+<p>To start this process, what you will need to do is head to <a href="https://www.continuum.io/downloads">continuum.io/downloads</a> and download the respective executable file for your operating system (Windows,Mac,Linux). You will be taken to a selection menu on the webpage that looks similar to this:</p>
+<p><img src="https://res.cloudinary.com/carter3689/image/upload/v1497286934/anaconda-install_avvf2e.png" alt="anaconda-install"></p>
+<p>You will want to download the Python 3.6 version using the x86-64 bit installer(Windows,Mac,Linux). Please follow the instructions <a href="https://docs.continuum.io/anaconda/install">here</a> - Please select which operating system you are using. <strong>Note</strong> for windows users, you are recommended to add anaconda to your path for class. The blog post differs in this fact, but we will need specific commands that anaconda provides in class. <strong>Please add it to path</strong>.</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="kc">False</span>
-
-<span class="k">if</span> <span class="n">x</span><span class="p">:</span>
-    <span class="nb">print</span> <span class="s1">(x was True!)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span> <span class="s1">(I will be printed in any case where x is not true)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>I will be printed in any case where x is not true
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Multiple-Branches">Multiple Branches<a class="anchor-link" href="#Multiple-Branches">&#182;</a></h3><p>Let's get a fuller picture of how far if, elif, and else can take us!</p>
-<p>We write this out in a nested structure. Take note of how the if,elif,and else line up in the code. This can help you see what if is related to what elif or else statements.</p>
-<p>We'll reintroduce a comparison syntax for Python.</p>
-
+<h2 id="Installing-Atom">Installing Atom<a class="anchor-link" href="#Installing-Atom">&#182;</a></h2>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">loc</span> <span class="o">=</span> <span class="s1">&#39;Arena&#39;</span>
-
-<span class="k">if</span> <span class="n">loc</span> <span class="o">==</span> <span class="s1">&#39;Auto Shop&#39;</span><span class="p">:</span>
-    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Welcome to the Auto Shop!&#39;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">loc</span> <span class="o">==</span> <span class="s1">&#39;Bank&#39;</span><span class="p">:</span>
-    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Welcome to the bank!&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Where are you?&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Where are you?
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Note how the nested if statements are each checked until a True boolean causes the nested code below it to run. You should also note that you can put in as many elif statements as you want before you close off with an else.</p>
-<p>Let's create two more simple examples for the if,elif, and else statements:</p>
+<p>The last thing you will need to install for class is Atom. We will use this program as our text editor because of the many helpful features it provides as well as it's well organized package manager. This will help us write HTML,CSS,JavaScript and Python.</p>
+<p>To download it, please head to <a href="https://atom.io/">atom.io</a></p>
+<p>This install should be pretty straight forward and shouldn't take to much time.</p>
+<p>If help is needed here, please refer to this <a href="https://youtu.be/EyG20hhON6E?t=20s">video</a></p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">person</span> <span class="o">=</span> <span class="s1">&#39;Sammy&#39;</span>
-
-<span class="k">if</span> <span class="n">person</span> <span class="o">==</span> <span class="s1">&#39;Sammy&#39;</span><span class="p">:</span>
-    <span class="nb">print</span> <span class="s1">(&#39;Welcome Sammy!&#39;)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span> <span class="s2">(&quot;Welcome, what&#39;s your name?&quot;)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Welcome Sammy!
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">person</span> <span class="o">=</span> <span class="s1">&#39;George&#39;</span>
-
-<span class="k">if</span> <span class="n">person</span> <span class="o">==</span> <span class="s1">&#39;Sammy&#39;</span><span class="p">:</span>
-    <span class="nb">print</span> <span class="s1">(&#39;Welcome Sammy!&#39;)</span>
-<span class="k">elif</span> <span class="n">person</span> <span class="o">==</span><span class="s1">&#39;George&#39;</span><span class="p">:</span>
-    <span class="nb">print</span> <span class="s2">(&quot;Welcome George!&quot;)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span> <span class="s2">(&quot;Welcome, what&#39;s your name?&quot;)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Welcome George!
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Indentation">Indentation<a class="anchor-link" href="#Indentation">&#182;</a></h2><p>It is important to keep a good understanding of how indentation works in Python to maintain the structure and order of your code. We will touch on this topic again when we start building out functions!</p>
 
 </div>
 <div class="inner_cell">
-  <button type="button" name="Next" class="btn btn-success"><a style="text-decoration: none;color:white" href="https://codingtemple.github.io/python-prework/Functions.html">Move to next section</a></button>
+  <button type="button" name="Next" class="btn btn-success"><a href="https://codingtemple.github.io/python-prework/Python-Strings.html">Move to next section</a></button>
 </div>
 </div>
 </div>
